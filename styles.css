@@ -1,0 +1,55 @@
+    /* CSS styles */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .product {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
+    .product img {
+        width: 100%;
+        height: auto;
+    }
+    .optional-image{
+        padding-top: 50px;
+    }
+    .product-info {
+        padding: 10px;
+    }
+    .price{
+        color:blue;
+    }
+    .add-to-cart {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+    }
+    input[type="radio"] {
+        display: none;
+    }
+    
+    label {
+        display: inline-block;
+        padding: 5px 10px;
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    input[type="radio"]:checked + label {
+        background-color: #007bff;
+        color: #fff;
+    }
+
+

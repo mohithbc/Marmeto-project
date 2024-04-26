@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Page</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <div class="product">
+        <div class="product-image">
+            <img src="first-image.jpg" alt="Product Image">
+            <div class="optional-image">
+            <img src="second-image.jpg" alt="optional image">
+            </div>
+        </div>
+        <div class="product-info">
+            <h5>Marmeto</h5>
+            <strong><h1>Embrace Sideboard</h1></strong>
+            <hr>
+             <!-- Original price in blue -->
+            <strong><h2><p style="color: blue">$1299.00</p></h2></strong>
+            <!-- Discounted price with discount percentage -->
+            <p id="discount-info"><del>$1450.00</del> <span id="discount-percentage" style="color: red;"></span></p>
+            <!-- Total price (hidden by default) -->
+            <p id="total-price" style="display: none;"></p>
+            <hr>
+            <!-- Color selection -->
+            <p><h5>Choose a color</h5></p>
+            <form id="color">
+                <!-- Each color option -->
+                <input type="radio" id="colorPink" name="color" value="pink">
+                <label for="colorPink" style="background-color: pink" >Pink</label>
+
+
+                <input type="radio" id="colorGreen" name="color" value="green">
+                <label for="colorGreen" style="background-color: green;">Green</label>
+            
+                <input type="radio" id="colorBlue" name="color" value="blue">
+                <label for="colorBlue" style="background-color: blue;">Blue</label>
+            
+                <input type="radio" id="colorPurple" name="color" value="purple">
+                <label for="colorPurple" style="background-color: purple;">Purple</label>   
+            </form>
+            <hr>
+            <!-- Size selection -->
+            <p><h5>Choose a size</h5></p>
+            <form class="size">
+                <input type="radio" id="sizeS" name="size" value="S">
+                <label for="sizeS" >Small</label>
+            
+                <input type="radio" id="sizeM" name="size" value="M">
+                <label for="sizeM" >Medium</label>
+            
+                <input type="radio" id="sizeL" name="size" value="L">
+                <label for="sizeL">Large</label>
+
+                <input type="radio" id="sizeXL" name="size" value="XL">
+                <label for="sizeXL">Xtra Large</label>
+
+                <input type="radio" id="sizeXXL" name="size" value="XXL">
+                <label for="sizeXXL">XtraXtra Large</label>
+            </form>
+            <hr>
+            <br>
+            <!-- Quantity input -->
+            <input type="number" id="quantity" value="1">
+            <!-- Add to Cart button -->
+            <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            <strong><p id="cart-message" style="display: none;"></p></strong>
+            <hr>
+            <p>The Embrace Sideboard is a stylish wear. With a top cloth designed to provide superior protection and look great, this storage solution is both functional and attractive. It fits seamlessly into any home decor, with clean lines and a timeless look. Crafted from premium materials for a combination of style, durability, and reliability.</p>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
